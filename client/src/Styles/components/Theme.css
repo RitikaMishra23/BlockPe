@@ -1,0 +1,40 @@
+.Theme{
+    position: fixed;
+    bottom: 2vh;
+    right: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    border-radius: 50% 0 0 50%;
+    background-color: var(--body-background);
+    border: 1px solid var(--text-color);
+}
+.Theme:hover{
+    cursor: pointer;
+}
+
+.lightOn{
+    color:rgb(255, 221, 3);
+}
+
+.lightOff{
+    color: var(--text-color);
+}
+
+.tooltip{
+    position: absolute;
+    bottom: 7.8vh;
+    right: 0;
+    padding: 5px 10px;
+    background-color: var(--body-background-invert);
+    color: var(--text-color-invert);
+    margin: 5px 5px 0;
+    font-size: 1.2rem;
+    border-radius: 10px 10px 0;
+    display: none;
+}
+
+.Toolvis{
+    display: block;
+}
