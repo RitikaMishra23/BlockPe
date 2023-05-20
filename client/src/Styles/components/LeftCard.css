@@ -136,6 +136,15 @@
     margin: 4rem auto 2rem;
 }
 
+.navigator-icon{
+    color: #86aabe;
+    margin: 0 10px 0;
+}
+
+.navigator-title{
+    color: #fff;
+}
+
 
 .hide-left-card{
     display: none;

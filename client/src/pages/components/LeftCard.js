@@ -9,6 +9,7 @@ import {
 	faMoneyCheckDollar,
 	faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const user = {
 	name: "Nitya Tiwari",
@@ -22,18 +23,24 @@ const user = {
 };
 
 const buttonInfo = [
-	{ icon: faUser, txt: "Profile" },
-	{ icon: faMoneyCheckDollar, txt: "Wallet Balance" },
-	{ icon: faClockRotateLeft, txt: "Transaction History" },
-	{ icon: faBell, txt: "Notifications" },
-	{ icon: faGears, txt: "Settings" },
-	{ icon: faCircleInfo, txt: "Help" },
+	{ icon: faUser, txt: "Profile", link: "profile" },
+	{ icon: faMoneyCheckDollar, txt: "Wallet Balance", link: "wallet" },
+	{ icon: faClockRotateLeft, txt: "Transaction History", link: "history" },
+	{ icon: faBell, txt: "Notifications", link: "notifications" },
+	{ icon: faGears, txt: "Settings", link: "settings" },
+	{ icon: faCircleInfo, txt: "Help", link: "help" },
 ];
 
 function LeftCard(props) {
 	return (
 		<>
-			<div className={props.visible === "Y" ? "leftcard" : "leftcard hide-left-card"}>
+			<div
+				className={
+					props.visible === "Y"
+						? "leftcard"
+						: "leftcard hide-left-card"
+				}
+			>
 				<div className="title">
 					<FontAwesomeIcon icon={faBars} />
 				</div>
@@ -63,12 +70,16 @@ function LeftCard(props) {
 				</div>
 				<div className="navigators">
 					{buttonInfo.map((button) => (
-						<div className="navigator">
-							<div className="navigator-icon">
-								<FontAwesomeIcon icon={button.icon} />
+						<NavLink to={button.link}>
+							<div className="navigator">
+								<div className="navigator-icon">
+									<FontAwesomeIcon icon={button.icon} />
+								</div>
+								<div className="navigator-title">
+									{button.txt}
+								</div>
 							</div>
-							<div className="navigator-title">{button.txt}</div>
-						</div>
+						</NavLink>
 					))}
 				</div>
 			</div>
