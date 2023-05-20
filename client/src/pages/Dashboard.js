@@ -1,10 +1,16 @@
 import React from "react";
+import Theme from "./components/Theme";
+import LeftCard from "./components/LeftCard";
+import { Outlet } from "react-router-dom";
 
 function Dashboard() {
+
 	return (
-		<div>
-			<h1>Dashboard</h1>
-		</div>
+		<>
+			<Theme />
+			<LeftCard visible="Y" />
+			<Outlet/>
+		</>
 	);
 }
 

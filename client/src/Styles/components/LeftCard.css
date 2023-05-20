@@ -1,0 +1,142 @@
+.leftcard {
+    width: 20rem;
+    height: 100vh;
+    overflow: scroll;
+    box-sizing: border-box;
+    background-color:  #034971;
+    color: #fff;
+}
+
+.pfp{
+    object-fit: cover;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: auto;
+    border: 3px solid  #fff;   
+}
+
+.user-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem auto 0.5rem;
+    text-align: center;
+}
+.log-out{
+    width: 100%;
+    display: flex;
+}
+
+.log-out-link{
+    color: #a0cde7;
+    margin: auto;
+}
+.wallet{
+    background-color: #f4f4f4;
+    width: 80%;
+    margin: 2rem auto;
+    height: 170px;
+    border-radius: 10px;
+    /* display: flex; */
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+.wallet-title{
+    width: 100%;
+    background-color: #bfe0f3;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #027abf;
+    margin-bottom: 1rem;
+}
+
+.wallet-bal{
+    font-family: var(--font-mono);
+    font-weight: 200;
+    height: 20%;
+}
+
+.wallet-curr{
+    font-weight: 100;
+    font-family: var(--font-mono);
+    font-size: 1rem;
+}
+
+.topup-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Roboto mono', monospace;
+    margin: 1rem auto;
+    text-align: center;
+    display: block;
+    width: 80%;
+    border-radius: 10px;
+    color: #027abf;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.dsh-button{
+    padding: 0.4rem 1rem;
+    margin: 0.2rem 0;
+    background-color: #bfe0f3;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: #1d667f;
+    cursor: pointer;
+}
+
+.dsh-button:hover{
+    box-shadow: inset -1px 6px 4px 0px rgba(255, 255, 255, 0.605);
+}
+
+
+.navigator {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    margin: 1rem 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 5px 5px 0 10px;
+    cursor: pointer;
+    margin: 1rem auto;
+    /* border-bottom: 1px solid #ffffffad; */
+    /* box-shadow: inset 3px -1px 5px 1px  rgba(255, 255, 255, 0.629); */
+}
+
+
+
+.navigator:hover {
+    background-color:  #000000;
+    /* color:  #000000; */
+}
+
+.navigator-icon {
+    -webkit-transition: width 0s;
+    -moz-transition: width 0s;
+    -o-transition: width 0s;
+    transition: width 0s;
+    padding:0 5px;
+}
+
+.pfp-container{
+    display: flex;
+    margin: 4rem auto 2rem;
+}
+
+
+.hide-left-card{
+    display: none;
+}
