@@ -1,27 +1,33 @@
-:root{
-    --body-background : #fff;
-    --body-background-invert : #000;
-    --text-color : #000;
-    --text-color-invert : #fff;
-    --blue-dark : #056197;
-    --blue-darker : #034971;
-    --blue-light : #27a7f2;
-    --font-normal : 'Rubik', sans-serif;
-    --font-mono : 'Roboto mono', monospace;
-    --font-code : 'Source Code Pro', monospace;
-    --font-money : 'M PLUS Code Latin', sans-serif;
-    
+:root {
+    --body-background: #fff;
+    --body-background-invert: #000;
+    --text-color: #000;
+    --text-color-invert: #fff;
+    --blue-dark: #056197;
+    --blue-darker: #034971;
+    --blue-light: #27a7f2;
+    --font-normal: 'Rubik', sans-serif;
+    --font-mono: 'Roboto mono', monospace;
+    --font-code: 'Source Code Pro', monospace;
+    --font-money: 'M PLUS Code Latin', sans-serif;
+
 
 }
-[data-theme="dark"]{
-    --body-background : #000;
-    --body-background-invert : #fff;
-    --text-color : #fff;
-    --text-color-invert : #000;
+
+[data-theme="dark"] {
+    --body-background: #000;
+    --body-background-invert: #fff;
+    --text-color: #fff;
+    --text-color-invert: #000;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 
-*{
+
+* {
     background-color: transparent;
     font-family: 'Rubik', sans-serif;
     margin: 0;
@@ -29,22 +35,22 @@
     /* transition: all 0.2s ease; */
 }
 
-body{
+body {
     background-color: var(--body-background);
     color: var(--text-color);
 }
 
-.reg-txt{
+.reg-txt {
     font-size: 1rem;
 }
 
-.txn-det{
+.txn-det {
     font-size: 1rem;
     font-weight: 300;
     font-family: 'Roboto mono', monospace;
 }
 
-.stats-txt{
+.stats-txt {
     font-size: 1.2rem;
     font-weight: 400;
     font-family: 'Roboto mono', monospace;

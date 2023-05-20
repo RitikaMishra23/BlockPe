@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Base from "./pages/Base";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-
+import Profile from "./pages/components/Profile";
 
 function App() {
 	return (
@@ -15,10 +15,9 @@ function App() {
 						<Route index path="home" element={<Home />} />
 					</Route>
 					<Route path="/login" element={<Login />} />
-					<Route path="/dashboard/" element={<Dashboard />}> 
-						
+					<Route path="/dashboard/" element={<Dashboard />}>
+						<Route path="profile" element={<Profile />} />
 					</Route>
-
 				</Routes>
 			</Router>
 		</>

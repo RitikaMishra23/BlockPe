@@ -41,9 +41,6 @@ function LeftCard(props) {
 						: "leftcard hide-left-card"
 				}
 			>
-				<div className="title">
-					<FontAwesomeIcon icon={faBars} />
-				</div>
 				<div className="pfp-container">
 					<img src={user.pfp} alt="pfp" className="pfp" />
 				</div>
